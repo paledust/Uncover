@@ -38,7 +38,7 @@ public class buttonTest : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
 
 	void CallButtonName()
 	{
-		player.GetComponentInChildren<Speak>().SendMessage ("saySymbol",symbolMeaning);
+		player.GetComponentInChildren<Speak>().SendMessage ("saySymbol", symbolMeaning);
 	}
 
 }

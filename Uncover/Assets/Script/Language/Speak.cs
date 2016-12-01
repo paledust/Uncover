@@ -30,6 +30,5 @@ public class Speak : MonoBehaviour {
 		timer = 0.0f;
 		currentWord = m_symbol;
 		ifSpeaking = true;
-		Debug.Log (transform.parent.gameObject.name + ":" + currentWord);
 	}
 }

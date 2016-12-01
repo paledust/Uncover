@@ -8,11 +8,13 @@ public class VoiceReaction : MonoBehaviour {
 	private EarDetection earDetection;
 	private SymbolStock symbolStock;
 	private CanvasCallout_Creature creatureUI;
+	private Decode decode;
 
 	virtual protected void Start()
 	{
-		symbolStock = transform.parent.GetComponentInChildren<SymbolStock> ();
+		symbolStock = GetComponentInChildren<SymbolStock> ();
 		creatureUI = transform.parent.GetComponentInChildren<CanvasCallout_Creature> ();
+		decode =  transform.parent.GetComponentInChildren<Decode> ();
 	}
 
 	virtual public void reaction(string m_receiveWord)
@@ -36,5 +38,9 @@ public class VoiceReaction : MonoBehaviour {
 	void ShowSymbol()
 	{
 		creatureUI.CallOn ();
+	}
+
+	void ShowOneSymbol()
+	{
 	}
 }
