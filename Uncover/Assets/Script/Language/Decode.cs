@@ -1,12 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Decode : MonoBehaviour {
-	public static string[] words = {"question", "living", "self"};
+	public static string[] words = {"1", "2", "3"};
 	public Sprite[] sprites;
 
+	public string[] questionList;
+	public Dictionary<string,string> diction;
+	public string[] AnswerList;
 
 	// Use this for initialization
+	void Start()
+	{
+		diction = new Dictionary<string,string>();
+
+		for (int i = 0; i < AnswerList.Length; i++) {
+			diction.Add (questionList [i], AnswerList [i]);
+		}
+	}
 
 	public Sprite decodeWords(string m_word)
 	{
@@ -19,5 +31,32 @@ public class Decode : MonoBehaviour {
 		return null;
 	}
 
+	public Sprite[] BreakCode(string m_words)
+	{
+		string answerTemp;
+		if (!diction.TryGetValue (m_words, out answerTemp)) {
+			return null;
+		}
+		string[] temp = new string[answerTemp.Length];
 
+		for (int i = 0; i < answerTemp.Length; i++) {
+			temp [i] = answerTemp [i].ToString();
+		}
+
+		Sprite[] tempSprite = new Sprite[temp.Length];
+
+		string answer = "The Answer is:";
+
+		for (int i = 0; i < temp.Length; i++) {
+			answer = answer + temp [i];
+		}
+
+        for (int i = 0; i < temp.Length; i++)
+        {
+            tempSprite[i] = decodeWords(temp[i]);
+        }
+
+        Debug.Log (answer);
+		return tempSprite;
+	}
 }

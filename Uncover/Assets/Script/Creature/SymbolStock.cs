@@ -1,23 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class SymbolStock : MonoBehaviour {
 	public string[] symbolSave;
-	public float waitTime;
 
 	private int i;
-	private float timer;
 	private bool ifCounting;
+	public string mergedQuestion;
 	// Use this for initialization
 	void Start () {
 		i = 0;
-		timer = 0.0f;
 		ifCounting = false;
-	}
-
-	void Update()
-	{
-		ThinkWord ();
+		mergedQuestion = null;
 	}
 	
 	public void AddSymbol(string m_words)
@@ -27,22 +22,39 @@ public class SymbolStock : MonoBehaviour {
 		if (i >= symbolSave.Length) {
 			i = 0;
 		}
-		ifCounting = true;
-		timer = 0.0f;
 	}
 
-	void ThinkWord()
+	public void CleanWords()
 	{
-		if (ifCounting && timer <= waitTime) {
-			timer += Time.deltaTime;
+		for (int j = 0; j < symbolSave.Length; j++) {
+			symbolSave [j] = null;
 		}
-		else if (ifCounting) {
-			ifCounting = false;
-			for (int j = 0; j < symbolSave.Length; j++) {
-				symbolSave [j] = null;
-			}
-			i = 0;
-			timer = 0.0f;
+		i = 0;
+		mergedQuestion = null;
+	}
+
+	public int getOrder()
+	{
+		return i;
+	}
+
+	public bool getCounting()
+	{
+		return ifCounting;
+	}
+
+	public string MergeSymbol()
+	{
+		foreach (string symbol in symbolSave) {
+			mergedQuestion = mergedQuestion + symbol;
 		}
+		Debug.Log ("Question is :" + mergedQuestion);
+
+		return mergedQuestion;
+	}
+
+	public string getQuestion()
+	{
+		return mergedQuestion;
 	}
 }
