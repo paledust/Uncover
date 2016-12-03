@@ -30,7 +30,7 @@ public class VoiceReaction : MonoBehaviour {
 	{
 		listenRest ();
 
-        if (!isWaiting && !ifListening && !ifAnswer)
+        if (!isWaiting && !ifListening && !ifAnswer && creatureUI.ifFadeAll())
         {
             Answer();
             ifAnswer = true;
@@ -83,6 +83,14 @@ public class VoiceReaction : MonoBehaviour {
         ifAnswer = false;
     }
 
+    void FadeAndReset()
+    {
+        creatureUI.FadeAll();
+        ifListening = true;
+        isWaiting = false;
+        ifAnswer = false;
+    }
+
 	void listenRest()
 	{
 		if (creatureUI.ifFadeAll () && !ifListening && ifAnswer) {
@@ -102,7 +110,7 @@ public class VoiceReaction : MonoBehaviour {
             }
         }
 
-        Invoke("FadeAllSymbol", 2.0f);
+        Invoke("FadeAndReset", 2.0f);
         symbolStock.CleanWords();
     }
 }

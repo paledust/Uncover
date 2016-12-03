@@ -5,6 +5,7 @@ public class Speak : MonoBehaviour {
 	public bool ifSpeaking;
 	public float speakingTime;
 	public string currentWord;
+    public AudioClip audio;
 
 	private float timer;
 
