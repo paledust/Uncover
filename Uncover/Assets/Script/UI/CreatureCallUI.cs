@@ -31,12 +31,9 @@ public class CreatureCallUI : MonoBehaviour {
 		foreach (TextAppear text in textAppears) {
             if (text.alpha!=0.0f)
             {
-                Debug.Log("No");
                 return false;
             }
 		}
-
-        Debug.Log("Yes");
 		return true;
 	}
 

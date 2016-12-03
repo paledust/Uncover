@@ -4,18 +4,17 @@ using System.Collections;
 public class VoiceReaction : MonoBehaviour {
 	public float reactionTime = 0.5f;
 	public float waitTime = 3.0f;
-	public bool ifListening;
 
+	private bool ifListening;
 	private string receiveWord;
 	private bool isWaiting;
 	private SymbolStock symbolStock;
 	private CreatureCallUI creatureUI;
 	private Decode decode;
     private bool ifAnswer;
-
 	private float timer;
 
-	virtual protected void Start()
+	protected void Start()
 	{
 		ifListening = true;
 		isWaiting = false;
@@ -43,7 +42,6 @@ public class VoiceReaction : MonoBehaviour {
 		else if (isWaiting) {
 			isWaiting = false;
 			ifListening = false;
-            Debug.Log("Waiting End");
 			FadeAllSymbol ();
 			timer = 0.0f;
 		}
@@ -86,6 +84,7 @@ public class VoiceReaction : MonoBehaviour {
     void FadeAndReset()
     {
         creatureUI.FadeAll();
+
         ifListening = true;
         isWaiting = false;
         ifAnswer = false;
@@ -108,9 +107,18 @@ public class VoiceReaction : MonoBehaviour {
                 Debug.Log(tempSprite[0].name);
                 creatureUI.CallOneOn(i, tempSprite[i]);
             }
+            transform.parent.GetComponentInChildren<Speak>().saySymbol(receiveWord);
+            Invoke("FadeAndReset", 2.0f);
         }
-
-        Invoke("FadeAndReset", 2.0f);
+        else
+        {
+            FadeAndReset();
+        }
         symbolStock.CleanWords();
+    }
+
+    public bool getifAnswer()
+    {
+        return ifAnswer;
     }
 }

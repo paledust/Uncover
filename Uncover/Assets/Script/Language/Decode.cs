@@ -11,7 +11,7 @@ public class Decode : MonoBehaviour {
 	public string[] AnswerList;
 
 	// Use this for initialization
-	void Start()
+	protected void Start()
 	{
 		diction = new Dictionary<string,string>();
 
@@ -31,7 +31,7 @@ public class Decode : MonoBehaviour {
 		return null;
 	}
 
-	public Sprite[] BreakCode(string m_words)
+	virtual public Sprite[] BreakCode(string m_words)
 	{
 		string answerTemp;
 		if (!diction.TryGetValue (m_words, out answerTemp)) {

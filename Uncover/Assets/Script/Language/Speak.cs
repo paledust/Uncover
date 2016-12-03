@@ -5,16 +5,19 @@ public class Speak : MonoBehaviour {
 	public bool ifSpeaking;
 	public float speakingTime;
 	public string currentWord;
-    public AudioClip audio;
+    public AudioClip audioClip;
 
 	private float timer;
+    private AudioSource audioSource;
 
 	void Start()
 	{
 		timer = 0.0f;
 		ifSpeaking = false;
 		currentWord = null;
-	}
+
+        audioSource = GetComponent<AudioSource>();
+    }
 
 	void Update()
 	{
@@ -31,5 +34,6 @@ public class Speak : MonoBehaviour {
 		timer = 0.0f;
 		currentWord = m_symbol;
 		ifSpeaking = true;
-	}
+        audioSource.PlayOneShot(audioClip);
+    }
 }
