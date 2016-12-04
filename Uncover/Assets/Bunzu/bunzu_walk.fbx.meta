@@ -1,0 +1,287 @@
+fileFormatVersion: 2
+guid: bb60e958fd0a6684fb89e9f35e214cb9
+timeCreated: 1480828557
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: bunzu_model_RIG1:bunzu_model_RIG:cape
+    100002: bunzu_model_RIG1:bunzu_model_RIG:eye1
+    100004: bunzu_model_RIG1:bunzu_model_RIG:eye2
+    100006: bunzu_model_RIG1:bunzu_model_RIG:group5
+    100008: bunzu_model_RIG1:bunzu_model_RIG:joint1
+    100010: bunzu_model_RIG1:bunzu_model_RIG:joint10
+    100012: bunzu_model_RIG1:bunzu_model_RIG:joint11
+    100014: bunzu_model_RIG1:bunzu_model_RIG:joint12
+    100016: bunzu_model_RIG1:bunzu_model_RIG:joint13
+    100018: bunzu_model_RIG1:bunzu_model_RIG:joint2
+    100020: bunzu_model_RIG1:bunzu_model_RIG:joint3
+    100022: bunzu_model_RIG1:bunzu_model_RIG:joint4
+    100024: bunzu_model_RIG1:bunzu_model_RIG:joint5
+    100026: bunzu_model_RIG1:bunzu_model_RIG:joint6
+    100028: bunzu_model_RIG1:bunzu_model_RIG:joint8
+    100030: bunzu_model_RIG1:bunzu_model_RIG:joint9
+    100032: bunzu_model_RIG1:bunzu_model_RIG:polySurface1
+    100034: bunzu_model_RIG1:bunzu_model_RIG:pPlane1
+    100036: bunzu_model_RIG1:bunzu_model_RIG:pPlane4
+    100038: bunzu_model_RIG1:bunzu_model_RIG:pSphere2
+    100040: //RootNode
+    100042: cape
+    100044: eye1
+    100046: eye2
+    100048: group5
+    100050: joint1
+    100052: joint10
+    100054: joint11
+    100056: joint12
+    100058: joint13
+    100060: joint2
+    100062: joint3
+    100064: joint4
+    100066: joint5
+    100068: joint6
+    100070: joint8
+    100072: joint9
+    100074: pPlane4
+    100076: pSphere2
+    100078: footCntrlLF
+    100080: footCntrRT
+    100082: group
+    100084: group3
+    100086: group6
+    100088: group7
+    100090: headCntrl
+    100092: headCntrlGRP
+    100094: hipCntrl
+    100096: hipCntrlGRP
+    100098: ikHandle1
+    100100: ikHandle2
+    100102: kneePointLF
+    100104: kneePointRT
+    100106: masterCntrl
+    100108: masterCntrlGRP
+    100110: nurbsCircle1
+    100112: nurbsCircle2
+    100114: pasted__bodyCntrl
+    100116: pasted__headGRP
+    100118: pasted__Wholebody
+    100120: spineCntrl1
+    100122: spineCntrl1GRP
+    400000: bunzu_model_RIG1:bunzu_model_RIG:cape
+    400002: bunzu_model_RIG1:bunzu_model_RIG:eye1
+    400004: bunzu_model_RIG1:bunzu_model_RIG:eye2
+    400006: bunzu_model_RIG1:bunzu_model_RIG:group5
+    400008: bunzu_model_RIG1:bunzu_model_RIG:joint1
+    400010: bunzu_model_RIG1:bunzu_model_RIG:joint10
+    400012: bunzu_model_RIG1:bunzu_model_RIG:joint11
+    400014: bunzu_model_RIG1:bunzu_model_RIG:joint12
+    400016: bunzu_model_RIG1:bunzu_model_RIG:joint13
+    400018: bunzu_model_RIG1:bunzu_model_RIG:joint2
+    400020: bunzu_model_RIG1:bunzu_model_RIG:joint3
+    400022: bunzu_model_RIG1:bunzu_model_RIG:joint4
+    400024: bunzu_model_RIG1:bunzu_model_RIG:joint5
+    400026: bunzu_model_RIG1:bunzu_model_RIG:joint6
+    400028: bunzu_model_RIG1:bunzu_model_RIG:joint8
+    400030: bunzu_model_RIG1:bunzu_model_RIG:joint9
+    400032: bunzu_model_RIG1:bunzu_model_RIG:polySurface1
+    400034: bunzu_model_RIG1:bunzu_model_RIG:pPlane1
+    400036: bunzu_model_RIG1:bunzu_model_RIG:pPlane4
+    400038: bunzu_model_RIG1:bunzu_model_RIG:pSphere2
+    400040: //RootNode
+    400042: cape
+    400044: eye1
+    400046: eye2
+    400048: group5
+    400050: joint1
+    400052: joint10
+    400054: joint11
+    400056: joint12
+    400058: joint13
+    400060: joint2
+    400062: joint3
+    400064: joint4
+    400066: joint5
+    400068: joint6
+    400070: joint8
+    400072: joint9
+    400074: pPlane4
+    400076: pSphere2
+    400078: footCntrlLF
+    400080: footCntrRT
+    400082: group
+    400084: group3
+    400086: group6
+    400088: group7
+    400090: headCntrl
+    400092: headCntrlGRP
+    400094: hipCntrl
+    400096: hipCntrlGRP
+    400098: ikHandle1
+    400100: ikHandle2
+    400102: kneePointLF
+    400104: kneePointRT
+    400106: masterCntrl
+    400108: masterCntrlGRP
+    400110: nurbsCircle1
+    400112: nurbsCircle2
+    400114: pasted__bodyCntrl
+    400116: pasted__headGRP
+    400118: pasted__Wholebody
+    400120: spineCntrl1
+    400122: spineCntrl1GRP
+    2300000: bunzu_model_RIG1:bunzu_model_RIG:eye1
+    2300002: bunzu_model_RIG1:bunzu_model_RIG:eye2
+    2300004: bunzu_model_RIG1:bunzu_model_RIG:polySurface1
+    2300006: bunzu_model_RIG1:bunzu_model_RIG:pPlane1
+    2300008: eye1
+    2300010: eye2
+    3300000: bunzu_model_RIG1:bunzu_model_RIG:eye1
+    3300002: bunzu_model_RIG1:bunzu_model_RIG:eye2
+    3300004: bunzu_model_RIG1:bunzu_model_RIG:polySurface1
+    3300006: bunzu_model_RIG1:bunzu_model_RIG:pPlane1
+    3300008: eye1
+    3300010: eye2
+    4300000: bunzu_model_RIG1:bunzu_model_RIG:eye1
+    4300002: bunzu_model_RIG1:bunzu_model_RIG:eye2
+    4300004: bunzu_model_RIG1:bunzu_model_RIG:pPlane1
+    4300006: bunzu_model_RIG1:bunzu_model_RIG:polySurface1
+    4300008: bunzu_model_RIG1:bunzu_model_RIG:pSphere2
+    4300010: eye1
+    4300012: eye2
+    4300014: cape
+    4300016: pSphere2
+    7400000: walk
+    9500000: //RootNode
+    13700000: bunzu_model_RIG1:bunzu_model_RIG:pSphere2
+    13700002: cape
+    13700004: pSphere2
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: walk
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: joint1
+        weight: 1
+      - path: joint1/joint2
+        weight: 1
+      - path: joint1/joint2/joint3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/eye1
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6/eye2
+        weight: 1
+      - path: joint1/joint10
+        weight: 1
+      - path: joint1/joint10/group5
+        weight: 1
+      - path: joint1/joint10/group5/joint8
+        weight: 1
+      - path: joint1/joint10/group5/joint8/joint9
+        weight: 1
+      - path: joint1/joint11
+        weight: 1
+      - path: joint1/joint11/joint12
+        weight: 1
+      - path: joint1/joint11/joint12/joint13
+        weight: 1
+      - path: pPlane4
+        weight: 1
+      - path: pPlane4/cape
+        weight: 1
+      - path: pSphere2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 38
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
