@@ -8,16 +8,17 @@ public class TextAppear : MonoBehaviour {
 	public float alpha;
 	public bool ifOn;
 	public bool ifOff;
+    public Color StartColor;
+    public Color fadeColor;
 
-	private bool ifCall;
+
+    private bool ifCall;
 	private bool ifFadeout;
-	private Color fadeColor;
 	// Use this for initialization
 	void Start () {
 		ifOff = true;
 		ifOn = false;
 
-		fadeColor = new Color (1, 1, 1, 0);
 		alpha = 0.0f;
 		ifCall = false;
 		imageUI = GetComponent<Image> ();
@@ -53,9 +54,9 @@ public class TextAppear : MonoBehaviour {
 
 	void ShowUI()
 	{
-		imageUI.color = Color.Lerp (imageUI.color, Color.white, Time.deltaTime * apSpeed);
+		imageUI.color = Color.Lerp (imageUI.color, StartColor, Time.deltaTime * apSpeed);
 		if (imageUI.color.a >= 0.99f) {
-			imageUI.color = Color.white;
+			imageUI.color = StartColor;
 			ifOn = true;
 		}
 	}

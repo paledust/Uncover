@@ -9,6 +9,7 @@ public class Speak : MonoBehaviour {
 
 	private float timer;
     private AudioSource audioSource;
+    public Animator anime;
 
 	void Start()
 	{
@@ -17,6 +18,7 @@ public class Speak : MonoBehaviour {
 		currentWord = null;
 
         audioSource = GetComponent<AudioSource>();
+        anime = transform.parent.GetComponentInChildren<Animator>();
     }
 
 	void Update()
@@ -34,6 +36,13 @@ public class Speak : MonoBehaviour {
 		timer = 0.0f;
 		currentWord = m_symbol;
 		ifSpeaking = true;
+        AnimePlay();
         audioSource.PlayOneShot(audioClip);
+    }
+
+    void AnimePlay()
+    {
+        if(anime)
+            anime.SetBool("ifTalking", true);
     }
 }
