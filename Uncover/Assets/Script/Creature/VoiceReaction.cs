@@ -104,7 +104,6 @@ public class VoiceReaction : MonoBehaviour {
         {
             for (int i = 0; i < tempSprite.Length; i++)
             {
-                Debug.Log(tempSprite[0].name);
                 creatureUI.CallOneOn(i, tempSprite[i]);
             }
             transform.parent.GetComponentInChildren<Speak>().saySymbol(receiveWord);

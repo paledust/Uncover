@@ -6,6 +6,7 @@ public class MovingCharacter : MonoBehaviour {
 	public float angularSpeed;
 	public float accelaration;
 	public LayerMask disableLayer;
+    public GameObject particleEffect;
 
 	private Ray clickRay;
 	private RaycastHit hit;
@@ -37,12 +38,18 @@ public class MovingCharacter : MonoBehaviour {
 		if (Physics.Raycast (clickRay, out hit)) {
 			navMesh.SetDestination (hit.point);
             Debug.Log(hit.collider.gameObject.name);
-		}
+            CreateParticle(hit.point);
+        }
 	}
 
     void Animation()
     {
         anime.SetFloat("speed", navMesh.velocity.magnitude);
+    }
+
+    void CreateParticle(Vector3 position)
+    {
+        Instantiate(particleEffect, position, Quaternion.Euler(0,0,0));
     }
 
 }

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class Decode : MonoBehaviour {
-	public static string[] words = {"1", "2", "3"};
+	public static string[] words = {"1", "2", "3", "4", "5", "6", "7"};
 	public Sprite[] sprites;
 
 	public string[] questionList;
