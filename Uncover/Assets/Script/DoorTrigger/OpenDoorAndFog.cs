@@ -3,12 +3,19 @@ using System.Collections;
 
 public class OpenDoorAndFog : MonoBehaviour {
     public GameObject door;
-    public GameObject fog;
+    public ParticleSystem fog;
+    public GameObject player;
 
     public void SetThemUp()
     {
+        Invoke("setDoorUnlock", 1.0f * Time.deltaTime);
+        fog.loop = false;
+    }
+
+    void setDoorUnlock()
+    {
         door.SetActive(false);
-        fog.GetComponent<ParticleSystem>().loop = false;
+        player.GetComponent<NavMeshAgent>().velocity = new Vector3(0, 0, 0);
     }
 
 }

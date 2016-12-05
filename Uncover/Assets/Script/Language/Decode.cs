@@ -69,7 +69,6 @@ public class Decode : MonoBehaviour {
     {
         int tempInt;
         tempInt = int.Parse(word);
-        Debug.Log(tempInt);
         player.GetComponentInChildren<LearnWords>().learnword(tempInt - 1);
     }
 }
