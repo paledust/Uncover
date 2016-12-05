@@ -48,7 +48,7 @@ public class SymbolStock : MonoBehaviour {
 		foreach (string symbol in symbolSave) {
 			mergedQuestion = mergedQuestion + symbol;
 		}
-		Debug.Log ("Question is :" + mergedQuestion);
+		//Debug.Log ("Question is :" + mergedQuestion);
 
 		return mergedQuestion;
 	}

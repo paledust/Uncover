@@ -36,6 +36,7 @@ public class DoorDecode : Decode {
         for (int i = 0; i < temp.Length; i++)
         {
             answer = answer + temp[i];
+            LearnWords(temp[i]);
         }
 
         for (int i = 0; i < temp.Length; i++)

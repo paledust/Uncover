@@ -37,7 +37,6 @@ public class MovingCharacter : MonoBehaviour {
 		clickRay = Camera.main.ScreenPointToRay (Input.mousePosition);
 		if (Physics.Raycast (clickRay, out hit)) {
 			navMesh.SetDestination (hit.point);
-            Debug.Log(hit.collider.gameObject.name);
             CreateParticle(hit.point);
         }
 	}

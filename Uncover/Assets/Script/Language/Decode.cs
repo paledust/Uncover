@@ -10,6 +10,8 @@ public class Decode : MonoBehaviour {
 	public Dictionary<string,string> diction;
 	public string[] AnswerList;
 
+    protected GameObject player;
+
 	// Use this for initialization
 	protected void Start()
 	{
@@ -18,7 +20,9 @@ public class Decode : MonoBehaviour {
 		for (int i = 0; i < AnswerList.Length; i++) {
 			diction.Add (questionList [i], AnswerList [i]);
 		}
-	}
+
+        player = GameObject.Find("Buzhi");
+    }
 
 	public Sprite decodeWords(string m_word)
 	{
@@ -49,14 +53,23 @@ public class Decode : MonoBehaviour {
 
 		for (int i = 0; i < temp.Length; i++) {
 			answer = answer + temp [i];
-		}
+            LearnWords(temp[i]);
+        }
 
         for (int i = 0; i < temp.Length; i++)
         {
             tempSprite[i] = decodeWords(temp[i]);
         }
 
-        Debug.Log (answer);
+        //Debug.Log (answer);
 		return tempSprite;
 	}
+
+    protected void LearnWords(string word)
+    {
+        int tempInt;
+        tempInt = int.Parse(word);
+        Debug.Log("Open The Door");
+        player.GetComponentInChildren<LearnWords>().learnword(tempInt - 1);
+    }
 }
