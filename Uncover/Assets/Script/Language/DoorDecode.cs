@@ -3,13 +3,22 @@ using System.Collections;
 
 public class DoorDecode : Decode {
     public string keyWords;
+    public OpenDoorAndFog openDoor;
+
+    override protected void Start()
+    {
+        base.Start();
+        openDoor = GetComponentInParent<OpenDoorAndFog>();
+    }
 
     private void OpentheDoor(string code)
     {
+        Debug.Log(code);
         if (code == keyWords)
         {
             Debug.Log("Approve");
             gameObject.SetActive(false);
+            openDoor.SetThemUp();
         }
     }
 
@@ -18,10 +27,11 @@ public class DoorDecode : Decode {
         string answerTemp;
         if (!diction.TryGetValue(m_words, out answerTemp))
         {
+            Debug.Log(m_words);
+            OpentheDoor(m_words);
             return null;
         }
 
-        OpentheDoor(m_words);
         string[] temp = new string[answerTemp.Length];
 
         for (int i = 0; i < answerTemp.Length; i++)
@@ -43,7 +53,6 @@ public class DoorDecode : Decode {
         {
             tempSprite[i] = decodeWords(temp[i]);
         }
-        Debug.Log("Open The Door");
         Debug.Log(answer);
         return tempSprite;
     }

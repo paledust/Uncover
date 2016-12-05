@@ -42,7 +42,7 @@ public class Speak : MonoBehaviour {
 
     void AnimePlay()
     {
-        if(!anime.GetBool("ifTalking"))
+        if(anime && !anime.GetBool("ifTalking"))
             anime.SetBool("ifTalking", true);
     }
 }
