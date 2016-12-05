@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/NewScene/BuildingScene_1.unity
-=======
 - path: Assets/NewScene/TestMove4.unity
->>>>>>> master
   isLoaded: 1
   isActive: 1

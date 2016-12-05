@@ -43,7 +43,7 @@ public class DoorDecode : Decode {
         {
             tempSprite[i] = decodeWords(temp[i]);
         }
-
+        Debug.Log("Open The Door");
         Debug.Log(answer);
         return tempSprite;
     }

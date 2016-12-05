@@ -21,7 +21,7 @@ public class Decode : MonoBehaviour {
 			diction.Add (questionList [i], AnswerList [i]);
 		}
 
-        player = GameObject.Find("Buzhi");
+        player = GameObject.Find("Bunzu");
     }
 
 	public Sprite decodeWords(string m_word)
@@ -69,7 +69,7 @@ public class Decode : MonoBehaviour {
     {
         int tempInt;
         tempInt = int.Parse(word);
-        Debug.Log("Open The Door");
+        Debug.Log(tempInt);
         player.GetComponentInChildren<LearnWords>().learnword(tempInt - 1);
     }
 }
