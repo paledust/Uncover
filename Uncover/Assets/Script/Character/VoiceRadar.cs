@@ -24,7 +24,8 @@ public class VoiceRadar : MonoBehaviour {
 	{
 		if (collider.tag == "Creature" && speaker.ifSpeaking && ifSend) {
 			ifSend = false;
-			collider.GetComponentInChildren<VoiceReaction> ().reaction (speaker.currentWord);
+            if(collider.GetComponentInChildren<VoiceReaction>())
+			    collider.GetComponentInChildren<VoiceReaction> ().reaction (speaker.currentWord);
 		}
 	}
 }
