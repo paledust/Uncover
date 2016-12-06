@@ -1,11 +1,5 @@
 fileFormatVersion: 2
 guid: 90d86c0c562d55f4db4660bd26ecda31
-<<<<<<< HEAD
-timeCreated: 1480988808
-=======
-timeCreated: 1480988862
->>>>>>> master
-licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
@@ -52,15 +46,15 @@ ModelImporter:
     3300000: eye1
     3300002: eye2
     4300000: cape
-    4300002: eye1
-    4300004: eye2
-    4300006: pSphere2
+    4300002: pSphere2
+    4300004: eye1
+    4300006: eye2
     7400000: Take 001
     9500000: //RootNode
     13700000: cape
     13700002: pSphere2
   materials:
-    importMaterials: 0
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
   animations:
