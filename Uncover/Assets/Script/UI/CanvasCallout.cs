@@ -59,7 +59,7 @@ public class CanvasCallout : MonoBehaviour {
 	public void CallOn()
 	{
 		foreach (Image element in imageUIs) {
-			element.color = Color.Lerp (element.color, Color.white, Time.deltaTime * apSpeed);
+			element.color = Color.Lerp (element.color, Color.white, Time.deltaTime * 3.0f);
 		}	
 
 		foreach(Button element in buttons)
