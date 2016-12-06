@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/NewScene/Scene2.unity
+=======
+- path: Assets/NewScene/TestMove8.unity
+>>>>>>> master
   isLoaded: 1
   isActive: 1
