@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/NewScene/Scene2.unity
+- path: Assets/NewScene/ShelleyScene.unity
   isLoaded: 1
   isActive: 1
