@@ -15,7 +15,7 @@ public class OpenDoorAndFog : MonoBehaviour {
     void setDoorUnlock()
     {
         door.SetActive(false);
-        player.GetComponent<NavMeshAgent>().velocity = new Vector3(0, 0, 0);
+        player.GetComponent<UnityEngine.AI.NavMeshAgent>().velocity = new Vector3(0, 0, 0);
     }
 
 }

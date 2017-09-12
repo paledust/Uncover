@@ -10,11 +10,11 @@ public class MovingCharacter : MonoBehaviour {
 
 	private Ray clickRay;
 	private RaycastHit hit;
-	private NavMeshAgent navMesh;
+	private UnityEngine.AI.NavMeshAgent navMesh;
     private Animator anime;
 	// Use this for initialization
 	void Start () {
-		navMesh = GetComponentInParent<NavMeshAgent> ();
+		navMesh = GetComponentInParent<UnityEngine.AI.NavMeshAgent> ();
 
 		navMesh.speed = movingSpeed;
 		navMesh.angularSpeed = angularSpeed;

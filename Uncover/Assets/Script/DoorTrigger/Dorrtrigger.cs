@@ -26,7 +26,7 @@ public class Dorrtrigger : MonoBehaviour {
     {
         if (collider.gameObject == player)
         {
-            player.GetComponent<NavMeshAgent>().enabled = false;
+            player.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
             player.GetComponentInChildren<MovingCharacter>().enabled = false;
             ifActive = true;
         }
